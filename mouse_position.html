@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         body {
-            background-color: skyblue;
+            background-color: black;
             margin: 0;
         }
         .line {
@@ -23,9 +23,9 @@
         }
         .target {
             position: absolute;
-            width: 60px;
-            height: 60px;
-            border: 10px solid rgba(255,255,255,.5);
+            width: 100px;
+            height:100px;
+            border: 10px solid rgba(255,255,255);
             border-radius: 50%;
 
         }
@@ -58,8 +58,8 @@
 
                 horizontal.style.transform = `translateY(${y-5}px)`
                 vertical.style.transform = `translateX(${x-5}px)`
-                target.style.transform = `translate(${x-40}px, ${y-40}px)`
-                tag.style.transform = `translate(${x}px, ${y}px)`
+                target.style.transform = `translate(${x-60}px, ${y-60}px)`
+                tag.style.transform = `translate(${x+20}px, ${y+20}px)`
                 tag.innerHTML = `${x}px, ${y}px`
             })
 
